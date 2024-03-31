@@ -36,18 +36,22 @@ public class Posto{
     }
 
     public void Trocaval(double NVal){
+        this.ValL = NVal;
         
     }
 
-    public void TrocaCom(double NCom){
+    public void TrocaCom(String NCom){
+        this.Combustivel = NCom;
         
     }
 
     public void TrocaQtd(double NQtd){
+        this.QtdCom = NQtd;
         
     }
 
-    public void MostraInf(double NVal){
-        
+    public void MostraInf(){
+        System.out.println("Quantidade de combustível: " + QtdCom + "L");
+
     }
 }
