@@ -34,4 +34,20 @@ public class Posto{
             System.out.println("Não é possivel abastecer !!");
         }
     }
+
+    public void Trocaval(double NVal){
+        
+    }
+
+    public void TrocaCom(double NCom){
+        
+    }
+
+    public void TrocaQtd(double NQtd){
+        
+    }
+
+    public void MostraInf(double NVal){
+        
+    }
 }
