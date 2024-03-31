@@ -13,8 +13,25 @@ public class Posto{
     }
 
     public void Abastece(double Val){
-        if (LitrosAb) {
+        double LitrosAb = Val / ValL;
+        if (LitrosAb <= QtdCom) {
+            System.out.println("Você abasteceu: " + LitrosAb + "Litros de: " + Combustivel);
+            QtdCom -= LitrosAb;
             
+        } else {
+            System.out.println("Nãi é possivel abastecer !!");
+        }
+    }
+
+    public void AbasteceLit(double Litros){
+        double ValPag = Litros * ValL;
+
+        if (Litros <= QtdCom) {
+            System.out.println("Valor: R$" + ValPag);
+            QtdCom -= Litros;
+            
+        } else {
+            System.out.println("Não é possivel abastecer !!");
         }
     }
 }
